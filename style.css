@@ -1,0 +1,220 @@
+/*
+selector{
+  property:view;
+  }
+*/
+
+body{
+  background-image: url(https://wallpaperaccess.com/full/814909.jpg);
+  background-size: cover;
+}
+
+
+
+.img1 {
+  position: absolute;
+  left: 260px;
+  top: 550px;
+  width: 1000px;
+  height: 500px;
+}
+
+.img2{
+  position: absolute;
+  left: 600px;
+  top: 483px;
+  width: 300px;
+  height: 150px;
+}
+
+.img3{
+  position: absolute;
+  left: 665px;
+  top: 895px;
+  width: 150px;
+  height: 140px;
+  border-style: dotted;
+  border-color: white;
+  filter: grayscale(100%);
+}
+
+.img4{
+  position: absolute;
+  left: 665px;
+  top: 1285px;
+  width: 150px;
+  height: 150px;
+  border-style: dotted;
+  border-color: white;
+  filter: grayscale(100%);
+}
+
+.img5{
+  position: absolute;
+  left: 665px;
+  top: 1685px;
+  width: 150px;
+  height: 150px;
+  border-style: dotted;
+  border-color: white;
+  filter: grayscale(100%);
+}
+
+.img6{
+  position: absolute;
+  left: 665px;
+  top: 2105px;
+  width: 150px;
+  height: 150px;
+  border-style: dotted;
+  border-color: white;
+  filter: grayscale(100%);
+}
+
+.img7{
+  position: absolute;
+  left: 665px;
+  top: 2505px;
+  width: 150px;
+  height: 150px;
+  border-style: dotted;
+  border-color: white;
+  filter: grayscale(100%);
+}
+
+
+
+h1{
+  text-align: center;
+  color: darkslateblue;
+}
+
+h2{
+  text-align: center;
+  color: darkmagenta;
+}
+
+h3{
+  text-align: center;
+  color: darkslategray;
+}
+
+
+
+.indexp1{
+  text-align: center;
+}
+
+.menu{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.wsmh2{
+  text-align: center;
+  color: slategrey;
+  text-decoration: underline;
+}
+
+.wsmh3{
+  text-align: center;
+  color: darkslategray;
+}
+
+.wsmh4{
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  text-decoration: underline;
+  }
+
+.wsmh5{
+  text-align: center;
+  color: lightslategrey;
+}
+
+.wth2{
+ text-align: center;
+ color: slategrey;
+}
+
+
+
+.srcp1{
+  color: darkgrey;
+  text-decoration: underline;
+  font-style: italic;
+  border-left: 3px dotted whitesmoke;
+  border-left-width: medium;
+  
+}
+
+.srcp2{
+  text-align: center;
+  color: black;
+}
+
+.srch2{
+  text-align: center;
+  color: slategrey;
+  text-decoration: underline;
+}
+
+.srch3{
+  text-align: center;
+  color: grey;
+}
+
+
+
+.learnh2{
+text-align: center;
+color: slategrey;
+text-decoration: underline;
+}
+
+
+
+.list{
+  text-align: center;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: whitesmoke;
+  border-style: solid;
+  border-width: thin;
+  border-bottom-width: thin;
+  border-color: lightgrey;
+  opacity: 80%;
+  width: 1450px;
+  height: 20px;
+  }
+
+
