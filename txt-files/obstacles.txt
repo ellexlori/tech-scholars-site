@@ -1,0 +1,5 @@
+OBSTACLE #_
+DATE: _/_/_
+DETAILS: 
+UPDATE: 
+RESOLVED: ✓ ✕
