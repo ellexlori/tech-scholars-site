@@ -1,3 +1,15 @@
+OBSTACLE #1
+DATE: 04/28/23
+DETAILS: Can't get modal images features to work once I added other images to the css and js files.
+UPDATE: Removing feature.
+RESOLVED: ✓ ✕
+
+OBSTACLE #2
+DATE: 04/28/23
+DETAILS: Can't get "back to top" nav in the correct place. 
+UPDATE: Addded a "right" css property.
+RESOLVED: ✓
+
 OBSTACLE #_
 DATE: _/_/_
 DETAILS: 

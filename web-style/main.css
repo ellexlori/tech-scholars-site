@@ -2,6 +2,7 @@
 html {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -9,11 +10,35 @@ body {
 }
 
 /*NAVBAR*/
-.nav {
+.nav { 
   overflow: hidden;
   background-color: #DFD3C2;
 }
-.nav a { 
+.nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a:hover { 
+  background-color: #B2C8A2;
+  color: black;
+}
+.nav a.active {
+  background-color: #DABA9E;
+  color: white;
+}
+.nav .icon {
+  display: none;
+}
+.nav.right {
+  overflow: hidden;
+  background-color: #DFD3C2;
+}
+.nav-right a {
   float: right;
   display: block;
   color: black;
@@ -22,22 +47,38 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-.nav a:hover {
+.faux-nav {
+  background-color: #dfd3c2;
+  overflow: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.faux-nav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.faux-nav a:hover { 
   background-color: #B2C8A2;
   color: black;
-}
-.nav a.active { 
-  background-color: #DABA9E;
-  color: white;
-}
-.nav .icon {
-  display: none;
 }
 @media screen and (max-width: 600px) {
   .nav a:not(:first-child) {
     display: none;
   }
-  .nav a.icon { 
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  .nav-right a:not(:first-child) {
+    display: none;
+  }
+  .nav-right a.icon { 
     float: right;
     display: block;
   }
@@ -52,6 +93,19 @@ body {
     top: 0;
   }
   .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .nav-right.responsive {
+    position: relative;
+  }
+  .nav-right.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-right.responsive a {
     float: none;
     display: block;
     text-align: center;
