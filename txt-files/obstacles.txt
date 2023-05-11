@@ -1,14 +1,26 @@
 OBSTACLE #1
 DATE: 04/28/23
 DETAILS: Can't get modal images features to work once I added other images to the css and js files.
-UPDATE: Removing feature.
-RESOLVED: ✓ ✕
+UPDATE: Removed feature.
+RESOLVED: ✕
 
 OBSTACLE #2
 DATE: 04/28/23
 DETAILS: Can't get "back to top" nav in the correct place. 
 UPDATE: Addded a "right" css property.
 RESOLVED: ✓
+
+OBSTACLE #3
+DATE: 05/10/23
+DETAILS: Timeline is overlapping the "back to top" button preventing me from accessing the button only in the timeline area.
+UPDATE: 
+RESOLVED: ✕
+
+OBSTACLE #4
+DATE: 5/10/23
+DETAILS: Can't get images in the Women's Suffrage Movement section to be centered in the tab. Is stuck on the left side of the page.
+UPDATE: 
+RESOLVED: ✕
 
 OBSTACLE #_
 DATE: _/_/_

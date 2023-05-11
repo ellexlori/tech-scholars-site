@@ -1,99 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Cookie&family=Yeseva+One&display=swap');
+
 /*CXT TOP*/
 .topCtx {
   position: relative;
   text-align: center;
   color: white;
+  font-family: 'Cookie', cursive;
 }
 .topImg {
   width: 100%;
   max-width: 300%;
   height: auto;
 }
-
-/*WSM IMG*/
-/**
-* {
-  box-sizing: border-box;
-}
-img {
-  vertical-align: middle;
-}
-.container {
-  position: relative;
-  width: 30%;
-  max-width: 55%;
-  left: 10px;
-}
-.wsmSlides {
-  display: none;
-}
-.cursor {
-  cursor: pointer;
-}
-.prev,
-.next {
-  cursor: pointer;
+.centered {
   position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: blue;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
   color: white;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.sidenote {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
 }
-.column {
-  float: left;
-  width: 20%;
-  max-width: 30%
+
+/*CONTEXT*/
+.contextInfo i {
+  text-align: right;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
 }
-.demo {
-  opacity: 0.6;
+.accordion {
+  background-color: lightblue;
+  color: black;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
-.active,
-.demo:hover {
-  opacity: 1;
+.accordion:hover {
+  background-color: lightgray;
 }
-**/
-.sigWmnImg {
-  center: left;
+.active {
+  background-color: palevioletred;
+}
+.panel {
+  padding: 10px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+h2 {
+  font-family: 'Castoro Titling', cursive;
+  text-align: center;
+}
+
+/*WSM FIG*/
+#wmnImg {
   width: 35%;
   max-width: 90%;
 }
-
-/*WSM ABOUT*/
-.sigWmnHdg {
-  text-align: left;
+.tab {
+  float: center;
+  overflow: hidden;
+  background-color: lightblue;
 }
-.sigWmnTxt {
-  text-align: left;
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: black;
+}
+.tab button.active {
+  background-color: palevioletred;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+.topright:hover {
+  color: purple;
+}
+
+/*TIMELINE*/
+* {
+  box-sizing: border-box;
+}
+.timeline h4 {
+  font-family: 'Yeseva One', cursive;
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  margin-left: -3px; /*changed from -3% to -5% - changes the position of the containers from the left*/
+}
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px; 
+  height: 25px; 
+  right: -15px; /*changed from -17px to -25px - changes the position of the left circles*/
+  background-color: black;
+  border: 4px solid lightblue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid lightgrey;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent lightgrey;
+}
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid lightgrey;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent lightgrey transparent transparent;
+}
+.right::after {
+  left: -16px;
+}
+.content {
+  padding: 25px 25px; /*changed 20px to 25px and 30px to 25px*/
+  background-color: lightgrey;
+  position: relative;
+  border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  .container::before {
+  left: 60px;
+  border: medium solid lightgrey;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent lightgrey transparent transparent;
+  }
+  .left::after, .right::after {
+  left: 15px;
+  }
+  .right {
+  left: 0%;
+  }
 }
